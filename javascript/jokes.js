@@ -1,11 +1,12 @@
-// import { fetchRandomJoke, searchJokesByTerm } from "./api.js";
+import { fetchRandomJoke, searchJokesByTerm } from "./api.js";
 
-// export async function getJoke() {
-//   const jokeDiv = document.querySelector(".container .joke p");
-//   const joke = await fetchRandomJoke();
-//   jokeDiv.innerHTML = joke;
-//   console.log(joke);
-// }
+export async function getJoke() {
+  const jokeDiv = document.querySelector(".container .joke p");
+  const joke = await fetchRandomJoke();
+  jokeDiv.innerHTML = joke;
+  console.log(joke);
+}
+
 
 // export function searchJokes() {
 //   const searchTerm = document.getElementById("search-input").value;
