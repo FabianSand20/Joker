@@ -13,7 +13,7 @@ export async function performSearch(searchTerm) {
     resultsJoke.forEach(joke => {
       const jokeElement = document.createElement('a');
       var link = document.createTextNode("This is link");
-      jokeElement.href="https://stackoverflow.com/questions/4772774/how-do-i-create-a-link-using-javascript"
+      jokeElement.href="http://127.0.0.1:5501/store.html"
       jokeElement.textContent = joke.joke;
       resultsContainer.appendChild(jokeElement);
     });
