@@ -15,8 +15,9 @@ const jokeDiv = document.querySelector(".container .joke p");
 button.addEventListener("click", function () {
   // jokeDiv.style.color = "blue";
   getJoke();
- });
-
+  });
+  
+  
 
 // document.addEventListener('DOMContentLoaded', displayRandomJoke);
 
