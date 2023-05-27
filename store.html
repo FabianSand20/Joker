@@ -5,44 +5,44 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/styles.css">
   <title>STORE</title>
 </head>
 
 <body>
-  <div class="product-container">
-    <div class="product-visualization">
-      <img src="product-image.jpg" alt="Product Image">
+  <main class="main">
+    <section class="product-wrap">
+      <div class="visualizer">
+        <img id="main-img" class="visualizer__img" src="img/imgstore/product-shirt-white.jpg" />
+        <p id="main-joke" class="visualizer__joke">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
+          repudiandae odit tempore architecto mollitia unde voluptatum! Ut nobis nisi ducimus? Nihil rem cupiditate
+          atque cumque necessitatibus consequuntur enim perferendis iusto!</p>
+      </div>
+      <div>
+        <div>
+          <input data-id="black" class="color" type="radio" name="color">
+          <label for="black">Black</label>
+        </div>
+        <div>
+          <input data-id="white" class="color" type="radio" name="color">
+          <label for="white">White</label>
+        </div>
+      </div>
+    </section>
+    <section class="product-details">
+      <h1 id="title">White shirt with joke</h1>
+      <p id="price">$20</p>
+      <p id="selected-joke">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur repudiandae odit tempore
+        architecto mollitia unde voluptatum! Ut nobis nisi ducimus? Nihil rem cupiditate atque cumque necessitatibus
+        consequuntur enim perferendis iusto!</p>
+    </section>
+  </main>
+  <section class="more-products">
+    <h2>Choose another product</h2>
+    <div id="moreproducts-wrap" class="moreproducts___wrapper">
     </div>
+  </section>
 
-    <div class="product-info">
-      <h1 id="product-title">Product Title</h1>
-      <p id="product-price">Price: $10</p>
-      <p id="selected-joke">Selected Joke: Lorem ipsum dolor sit amet.</p>
-    </div>
-
-    <div class="color-selection">
-      <label for="color-select">Select Color:</label>
-      <select id="color-select">
-        <option value="white">White</option>
-        <option value="black">Black</option>
-      </select>
-    </div>
-
-    <div class="random-joke">
-      <button id="random-joke-button">Get Random Joke</button>
-    </div>
-
-    <div class="product-selection">
-      <label for="product-select">Select Another Product:</label>
-      <select id="product-select">
-        <option value="product1">Product 1</option>
-        <option value="product2">Product 2</option>
-        <option value="product3">Product 3</option>
-      </select>
-    </div>
-    
-  </div>
-
+  <script type="module" src="SHOP/store.js"></script>
 </body>
-
 </html>
