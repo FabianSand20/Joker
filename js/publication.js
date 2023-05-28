@@ -1,4 +1,6 @@
-class publication {
+// publication.js
+
+class Publication {
   constructor() {
     this.subscribers = [];
   }
@@ -12,4 +14,4 @@ class publication {
   }
 }
 
-export default publication;
+export default Publication;

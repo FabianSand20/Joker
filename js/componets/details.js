@@ -1,5 +1,7 @@
+// details.js
+
 import { productChange } from './more-products.js';
-import prices from '../config.js';
+import prices from './settings.js';
 import { colorChange } from './colors.js';
 
 const title = document.querySelector('#title');
@@ -11,14 +13,14 @@ let state = {
 }; 
 
 function handleProductChange(product) {
-  title.innerHTML = `${state.color} ${product} with joke`;
-  price.innerHTML = `${prices[product][state.color]}`;
+  title.innerHTML = '${state.color} ${product} with joke';
+  price.innerHTML = '${prices[product][state.color]}';
   state.product = product;
 }
 
 function handleColorChange(color) {
-  title.innerHTML = `${color} ${state.product} with joke`;
-  price.innerHTML = `${prices[state.product][color]}`;
+  title.innerHTML = '${color} ${state.product} with joke';
+  price.innerHTML = '${prices[state.product][color]}';
   state.color = color;
 }
 

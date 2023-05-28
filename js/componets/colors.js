@@ -1,7 +1,9 @@
-import publication from '../publication.js';
+// colors.js
+
+import Publication from '../publication.js';
 
 const colorInputs = document.querySelectorAll('.color');
-const colorChange = new publication();
+const colorChange = new Publication();
 
 function handleColorChange(event) {
   const color = event.currentTarget.dataset.id;

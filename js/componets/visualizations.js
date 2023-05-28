@@ -1,4 +1,6 @@
-import {productChange} from './more-products.js';
+// visualizations.js
+
+import { productChange } from './more-products.js';
 import { colorChange } from './colors.js';
 
 const image = document.querySelector('#main-img');
@@ -9,22 +11,22 @@ let state = {
 }; 
 
 function handleProductChange(product) {
-  image.setAttribute('src', `img/product-${product}-${state.color}.jpg`);
+  image.setAttribute('src', 'img/product-${product}-${state.color}.jpg');
   state.product = product;
 }
 
 function handleColorChange(color) {
-  joke.classList.remove(`with-${state.color}-img`);
-  image.setAttribute('src', `img/product-${state.product}-${color}.jpg`);
-  joke.classList.add(`with-${color}-img`);
+  joke.classList.remove('with-${state.color}-img');
+  image.setAttribute('src', 'img/product-${state.product}-${color}.jpg');
+  joke.classList.add('with-${color}-img');
   state.color = color;
 }
 
-function initvisualizations() {
+function initVisualizations() {
   productChange.subscribe(handleProductChange);
   colorChange.subscribe(handleColorChange);
 }
 
 export {
-  initvisualizations
+  initVisualizations
 }
