@@ -11,13 +11,13 @@ let state = {
 }; 
 
 function handleProductChange(product) {
-  image.setAttribute('src', 'img/product-${product}-${state.color}.jpg');
+  image.setAttribute('src', 'img/store/product-${product}-${state.color}.jpg');
   state.product = product;
 }
 
 function handleColorChange(color) {
   joke.classList.remove('with-${state.color}-img');
-  image.setAttribute('src', 'img/product-${state.product}-${color}.jpg');
+  image.setAttribute('src', 'img/store/product-${state.product}-${color}.jpg');
   joke.classList.add('with-${color}-img');
   state.color = color;
 }
