@@ -1,34 +1,21 @@
 // details.js
 
-import { productChange } from './moreproducts.js';
-import prices from './settings.js';
-import { colorChange } from './colors.js';
+import { productChange } from "./moreproducts.js";
+import prices from "../settings.js";
 
 const title = document.querySelector('#title');
 const price = document.querySelector('#price');
 const joke = document.querySelector('#selected-joke');
-let state = {
-  color: 'white',
-  product: 'shirt'
-}; 
 
-function handleProductChange(product) {
-  title.innerHTML = '${state.color} ${product} with joke';
-  price.innerHTML = '${prices[product][state.color]}';
-  state.product = product;
+function handleProductChange(moreproduct) {
+  title.innerHTML=`white ${moreproduct} with joke`
+  price.innerHTML= `${price[moreproduct].white}`
 }
 
-function handleColorChange(color) {
-  title.innerHTML = '${color} ${state.product} with joke';
-  price.innerHTML = '${prices[state.product][color]}';
-  state.color = color;
-}
-
-function initDetails() {
+function initdetails(){
   productChange.subscribe(handleProductChange);
-  colorChange.subscribe(handleColorChange);
 }
 
-export {
-  initDetails
+export{
+  initdetails
 }
