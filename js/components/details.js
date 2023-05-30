@@ -1,6 +1,6 @@
 // details.js
 
-import { productChange } from './more-products.js';
+import { productChange } from './moreproducts.js';
 import prices from './settings.js';
 import { colorChange } from './colors.js';
 

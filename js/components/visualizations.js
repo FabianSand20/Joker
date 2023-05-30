@@ -1,6 +1,6 @@
 // visualizations.js
 
-import { productChange } from './more-products.js';
+import { productChange } from './moreproducts.js';
 import { colorChange } from './colors.js';
 
 const image = document.querySelector('#main-img');

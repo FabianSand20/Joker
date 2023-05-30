@@ -1,11 +1,11 @@
 // js/store.js
 
-import { initProducts } from './components/more-products.js';
+import { renderProducts } from './components/moreproducts.js';
 import { initVisualizations } from './components/visualizations.js';
 import { initDetails } from './components/details.js';
 import { initColors } from './components/colors.js';
 
 initVisualizations();
 initDetails();
-initProducts();
+renderProducts();
 initColors();
