@@ -27,25 +27,21 @@ export async function functionCall() {
 
   const joke = await getJokeByID(id);
 
-  const jokeContainer = document.querySelector('.joke-push');
-  jokeContainer.innerHTML = joke;
-  console.log(joke);
+  const jokeContainer1 = document.getElementById("main-joke")
+  jokeContainer1.innerHTML = joke;
+
+  const jokeContainer2 = document.getElementById("selected-joke2")
+  jokeContainer2.innerHTML = joke;
+
+  const jokeContainer3 = document.getElementById("selected-joke3")
+  jokeContainer3.innerHTML = joke;
 }
+
 
 //
 const button = document.querySelector(".container button");
 
 button.addEventListener("click", function () {
   getJoke();
-});
-
-document.getElementById("search-button").addEventListener("click", function () {
-  const searchTerm = document.getElementById("search-input").value;
-  const resultsContainer = document.getElementById('results-container');
-  if (searchTerm.trim() !== "") {
-    performSearch(searchTerm);
-  } else {
-    resultsContainer.textContent = "Por favor, ingresa un término de búsqueda válido.";
-  }
 });
 
