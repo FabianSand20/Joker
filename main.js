@@ -9,11 +9,9 @@ button.addEventListener("click", function () {
 });
 
 document.getElementById("search-button").addEventListener("click", function () {
-  console.log("hola")
   const searchTerm = document.getElementById("search-input").value;
   const resultsContainer = document.getElementById('results-container');
   if (searchTerm.trim() !== "") {
-    console.log("if")
     performSearch(searchTerm);
   } else {
     resultsContainer.textContent = "Por favor, ingresa un término de búsqueda válido.";
