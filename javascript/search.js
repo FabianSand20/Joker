@@ -13,7 +13,7 @@ export async function performSearch(searchTerm) {
     resultsJoke.forEach(joke => {
       const jokeElement = document.createElement('a');
       var link = document.createTextNode("This is link");
-      jokeElement.href="http://127.0.0.1:5500/store.html"
+      jokeElement.href="http://127.0.0.1:5501/index.html"
       jokeElement.textContent = joke.joke;
       resultsContainer.appendChild(jokeElement);
     });
