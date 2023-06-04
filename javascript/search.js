@@ -13,8 +13,9 @@ export async function performSearch(searchTerm) {
     resultsJoke.forEach(joke => {
       const jokeElement = document.createElement('a');
       var link = document.createTextNode("This is link");
-      jokeElement.href="http://127.0.0.1:5501/index.html"
+      jokeElement.href="http://127.0.0.1:5500/Shop.html?id="+joke.id
       jokeElement.textContent = joke.joke;
+      jokeElement.id = joke.id
       resultsContainer.appendChild(jokeElement);
     });
   } else {

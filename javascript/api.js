@@ -22,3 +22,13 @@ export async function searchJokesByTerm(term) {
   console.log(data)
   return data.results;
 }
+
+export async function getJokeByID(id) {
+  const response = await fetch(`https://icanhazdadjoke.com/j/${id}`, {
+    headers: {
+      Accept: "application/json"
+    }
+  });
+  const data = await response.json();
+  return data.joke;
+}
