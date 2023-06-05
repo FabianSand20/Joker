@@ -10,7 +10,7 @@ let state = {
 
 function handleProductChange(product) {
   image.setAttribute('src', `img/store/product-${product}-${state.color}.jpg`);
-
+console.log(product)
   state.product = product;
 }
 
